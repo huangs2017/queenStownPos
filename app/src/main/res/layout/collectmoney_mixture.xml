@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mixture"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeffffff"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="配料表"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="可选:"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:id="@+id/collectmoney_material_kexuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="可选配料数"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="已选:"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/collectmoney_material_yixuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="已选配料数"/>
+        <Button
+            android:id="@+id/collectmoney_material_ensure"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="确定" />
+        <Button
+            android:id="@+id/collectmoney_material_close"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="关闭" />
+    </LinearLayout>
+    
+    <!-- 6*6个Text -->
+    <GridView
+        android:id="@+id/gv_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="6"
+        android:background="#66ffffff"
+        android:orientation="horizontal"/>
+    
+</LinearLayout>
+
+

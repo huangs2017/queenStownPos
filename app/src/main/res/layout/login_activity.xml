@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+<!-- 日期时间 -->  
+<RelativeLayout 
+ android:layout_width="match_parent"
+ android:layout_height="80dp"
+ android:orientation="horizontal"
+ android:gravity="right"
+ android:layout_marginRight="10dp">
+  <AnalogClock
+     android:id="@+id/analogClock1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true" />
+</RelativeLayout>
+    
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_marginTop="80dp"> 
+    
+<!-- 左 -->  
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" 
+    android:background="#ccffffff"
+    android:orientation="vertical"
+    android:layout_marginLeft="80dp">
+    
+    <LinearLayout
+        android:id="@+id/linear_dianpu"
+        style="@style/left_inputborder"
+        android:layout_marginTop="18dp" >
+        <TextView
+       		style="@style/left_textview"
+            android:text="店铺：" />
+        <TextView
+            android:id="@+id/text_dianpu"
+            style="@style/left_edittext"
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_zhanghao"
+        style="@style/left_inputborder"
+        android:layout_marginTop="18dp" >
+        <TextView
+       		style="@style/left_textview"
+            android:text="账号：" />
+        <EditText
+            android:id="@+id/edit_zhanghao"
+            style="@style/left_edittext"
+            android:text="001" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linear_mima"
+        style="@style/left_inputborder"
+        android:layout_marginTop="18dp" >
+        <TextView
+       		style="@style/left_textview"
+            android:text="密码：" />
+        <EditText
+            android:id="@+id/edit_mima"
+            style="@style/left_edittext"
+             android:inputType="textPassword"
+            android:text="321001" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="登录" />
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/tongbu"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_margin="18dp"
+	        android:text="同步"
+	        android:visibility="invisible" />
+	    <Button
+	        android:id="@+id/jiaoban"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_margin="18dp"
+	        android:text="交班"
+	        android:visibility="invisible" />
+	    <Button
+	        android:id="@+id/shezhi"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_margin="18dp"
+	        android:text="设置"
+	        android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_weight="1" >
+	<!-- 右 -->
+	<GridLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:rowCount="4"
+		android:columnCount="4" >
+
+	<!-- 15个按钮 -->
+	　　<Button
+			android:id="@+id/seven"
+			style="@style/gridLayout_button"
+			android:text="7"/>
+	　　<Button
+			android:id="@+id/eight"
+			style="@style/gridLayout_button"
+			android:text="8"/>
+	　　<Button
+			android:id="@+id/nine"
+			style="@style/gridLayout_button"
+			android:text="9"/>
+	　　<Button
+			android:id="@+id/back"
+			style="@style/gridLayout_button"
+			android:text="←"/>
+	　　<Button
+			android:id="@+id/four"
+			style="@style/gridLayout_button"
+			android:text="4"/>
+	　　<Button
+			android:id="@+id/five"
+			style="@style/gridLayout_button"
+			android:text="5"/>
+	　　<Button
+			android:id="@+id/six"
+			style="@style/gridLayout_button"
+			android:text="6"/>
+	　　<Button
+			android:id="@+id/delete"
+			style="@style/gridLayout_button"
+			android:text="清除"/>
+	　　<Button
+			android:id="@+id/one"
+			style="@style/gridLayout_button"
+			android:text="1"/>
+	　　<Button
+			android:id="@+id/two"
+			style="@style/gridLayout_button"
+			android:text="2"/>
+	　　<Button
+			android:id="@+id/three"
+			style="@style/gridLayout_button"
+			android:text="3"/>
+
+	   <Button
+			android:id="@+id/ok"
+			style="@style/gridLayout_button"
+			android:layout_rowSpan="2"
+			android:layout_gravity="fill"
+			android:text="确定"/>
+
+	   <Button
+			android:id="@+id/zero"
+			style="@style/gridLayout_button"
+			android:text="0"/>
+	　　<Button
+			android:id="@+id/point"
+			style="@style/gridLayout_button"
+			android:text="."/>
+	   <Button
+			android:id="@+id/close"
+			style="@style/gridLayout_button"
+			android:text="关闭"/>
+
+	</GridLayout>
+</LinearLayout> 
+
+</LinearLayout>  
+    
+</LinearLayout>

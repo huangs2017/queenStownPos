@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.2"
+    useLibrary 'org.apache.http.legacy' // 使用HttpClient
+
+    defaultConfig {
+        applicationId "com.init"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode = 1
+        versionName = "0.4"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        /*
+        Unknown failure (at android.os.Binder.execTransact(Binder.java:731)) Error while Installing APKs
+        问题原因：
+            在早期Android系统几乎只支持一种CPU架构：ARMv5。
+            但现在Android系统支持七种CPU架构：1-ARMv5、2-ARMv7（2010）、3-X86（2011）、4-MIPS（2012）、5-ARMv8、6-MIPS64、7-X86Y64（2014）。
+            每一种都与各自的abi相关联，所以关于.so文件的处理需要更多的关注。
+        解决方法：
+            加入splits这一段就行：
+        */
+        splits {
+            abi {
+                enable true
+                reset()
+                include 'x86', 'armeabi-v7a','x86_64'
+                universalApk true
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support:support-v4:27.0.0'
+    implementation files('libs/fastjson-1.2.7.jar')
+}

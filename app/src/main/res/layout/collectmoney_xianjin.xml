@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9eccd0" >
+    
+   <EditText
+       android:id="@+id/edit_money"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" /> 
+    
+
+<LinearLayout 
+    android:id="@+id/layout_gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="30dp"
+	    android:orientation="vertical" >
+	   <Button  
+	       android:id="@+id/twenty" 
+	       android:layout_width="80dp"  
+	       android:layout_height="50dp" 
+	       android:text="20"/>  
+	   <Button  
+	       android:id="@+id/fifty" 
+	       android:layout_width="80dp"  
+	       android:layout_height="50dp" 
+	       android:layout_marginTop="20dp"
+	       android:text="50"/>  
+	   <Button  
+	       android:id="@+id/hundred" 
+	       android:layout_width="80dp"  
+	       android:layout_height="50dp" 
+	       android:layout_marginTop="20dp"
+	       android:text="100"/>  
+    </LinearLayout>
+    
+<!-- 15个按钮 --> 
+	<GridLayout
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:rowCount="4"
+	    android:columnCount="4"
+	    android:layout_gravity="center_horizontal" >  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_seven"  
+	        style="@style/gridLayout_button"
+	        android:text="7"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_eight" 
+	        style="@style/gridLayout_button" 
+	        android:text="8"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_nine" 
+	        style="@style/gridLayout_button"
+	        android:text="9"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_back" 
+	        style="@style/gridLayout_button"
+	        android:text="←"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_four" 
+	        style="@style/gridLayout_button"         
+	        android:text="4"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_five"
+	        style="@style/gridLayout_button"          
+	        android:text="5"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_six" 
+	        style="@style/gridLayout_button"         
+	        android:text="6"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_delete"  
+	        style="@style/gridLayout_button"
+	        android:text="清除"/>
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_one"  
+	        style="@style/gridLayout_button"
+	        android:text="1"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_two" 
+	        style="@style/gridLayout_button"
+	        android:text="2"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_three" 
+	        style="@style/gridLayout_button"
+	        android:text="3"/>  
+	            
+	   <Button  
+	        android:id="@+id/collectmoney_pop_ok"
+	        style="@style/gridLayout_button"  
+	        android:layout_rowSpan="2"  
+	        android:layout_gravity="fill" 
+	        android:text="确定"/>  
+	        
+	   <Button  
+	        android:id="@+id/collectmoney_pop_zero" 
+	        style="@style/gridLayout_button" 
+	        android:text="0"/>  
+	　　<Button  
+	        android:id="@+id/collectmoney_pop_point"  
+	        style="@style/gridLayout_button"
+	        android:text="."
+	        android:visibility="invisible"/>  
+	   <Button  
+	        android:id="@+id/collectmoney_pop_close"
+	        style="@style/gridLayout_button"
+	        android:text="关闭"/>    
+	</GridLayout> 
+</LinearLayout>
+ 
+   <Button
+       android:id="@+id/btn_zhaoling"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:textColor="#ff0000"
+       android:layout_gravity="center_horizontal"
+       android:visibility="invisible" /> 
+
+</LinearLayout>

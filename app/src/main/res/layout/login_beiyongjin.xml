@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00ffff" >
+    
+   <EditText
+       android:id="@+id/login_pop_edit"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" /> 
+    
+<!-- 15个按钮 --> 
+<GridLayout
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:rowCount="4"
+    android:columnCount="4"
+    android:layout_gravity="center_horizontal" >  
+　　<Button  
+        android:id="@+id/login_pop_seven"  
+        style="@style/gridLayout_button"
+        android:text="7"/>  
+　　<Button  
+        android:id="@+id/login_pop_eight" 
+        style="@style/gridLayout_button" 
+        android:text="8"/>  
+　　<Button  
+        android:id="@+id/login_pop_nine" 
+        style="@style/gridLayout_button"
+        android:text="9"/>  
+　　<Button  
+        android:id="@+id/login_pop_back" 
+        style="@style/gridLayout_button"
+        android:text="←"/>  
+　　<Button  
+        android:id="@+id/login_pop_four" 
+        style="@style/gridLayout_button"         
+        android:text="4"/>  
+　　<Button  
+        android:id="@+id/login_pop_five"
+        style="@style/gridLayout_button"          
+        android:text="5"/>  
+　　<Button  
+        android:id="@+id/login_pop_six" 
+        style="@style/gridLayout_button"         
+        android:text="6"/>  
+　　<Button  
+        android:id="@+id/login_pop_delete"  
+        style="@style/gridLayout_button"
+        android:text="清除"/>
+　　<Button  
+        android:id="@+id/login_pop_one"  
+        style="@style/gridLayout_button"
+        android:text="1"/>  
+　　<Button  
+        android:id="@+id/login_pop_two" 
+        style="@style/gridLayout_button"
+        android:text="2"/>  
+　　<Button  
+        android:id="@+id/login_pop_three" 
+        style="@style/gridLayout_button"
+        android:text="3"/>  
+            
+   <Button  
+        android:id="@+id/login_pop_ok"
+        style="@style/gridLayout_button"  
+        android:layout_rowSpan="2"  
+        android:layout_gravity="fill" 
+        android:text="确定"/>  
+        
+   <Button  
+        android:id="@+id/login_pop_zero" 
+        style="@style/gridLayout_button" 
+        android:text="0"/>  
+　　<Button  
+        android:id="@+id/login_pop_point"  
+        style="@style/gridLayout_button"
+        android:text="."/>  
+   <Button  
+        android:id="@+id/login_pop_close"
+        style="@style/gridLayout_button"
+        android:text="关闭"/>    
+</GridLayout>  
+<TextView
+       android:id="@+id/login_pop_cashiername"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:textColor="#000"
+       android:layout_gravity="center_horizontal" /> 
+</LinearLayout>
